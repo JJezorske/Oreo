@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Oreo's Favourites</title>
+<meta charset="utf-8">
+<link rel="shortcut icon" src="Favicon.ico">
+<link rel="stylesheet" href="oreo.css">
+<script src="jquery-3.5.1.js"></script>
+</head>
+<body>
+	<h1>Oreo's Favourites</h1>
+	<h2 id="oreoh2">A List </h2>
+	<div onmousedown="mOver (this)"
+	onmouseup="mOut (this)"
+	style="background-color:pink;width:120px;height:20px;padding:40px;">Mouse Over Me</div>
+	
+	<script>
+	function mOver (obj) {
+	obj.innerHTML = "Loves You"
+	}
+	function mOut (obj) {
+	obj.innerHTML = "And I loves Bunnies!"
+	}
+	</script>
+	<ul id="favourites">
+		<li>Treats</li>
+		
+	</ul>
+	<button onlick='alert ("Oreo loves dried Mango and Apple!");'>Oreo's favourite treats</button> <!--Alert doesn't work-->
+	<script src="list.js" rel="text/javascript"></script>
+	<script>
+	function myFunction () {
+		$("#oreoh2").attr("style", "background-color:white").html("A List of Things That Oreo Loves!");
+	}
+	$(document).ready(myFunction);
+	
+	</script>
+</body>
+</html>

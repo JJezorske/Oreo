@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Oreo Index</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href='Favicon.ico'/>
+	<link rel="stylesheet" href="oreo.css">
+	<style>
+
+
+	nav a { background:url('gallery/css-sprite.jpg') -0px 0px;
+			width:204px;height:204px;
+			display: block;
+			 background-repeat: no-repeat;
+			}
+			 
+	nav a:link    { color: #000000; }
+	nav a:visited { color: #91395f; }
+	nav a:hover   { background-color: #eaeaea;
+					color: #ffc0cb;
+					background-position: -0px -204px;
+					}
+	main	{margin-left: 400px;
+			}
+	img		{ border:  2px solid #ed9ac4;
+			border-radius: 15px;
+			opacity: 0.8;
+			}
+	footer	{      clear: both; 
+			text-align: center;} 
+	</style>
+	<script src="jquery-3.5.1.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("button").click(function () {
+				$("#heading").hide();
+				})
+			});
+		$("*") //universal selector
+			$(this) //selects current element or in this case entire document
+			$("p.intro") //selects all p elements with class of intro
+			$("p:first") // selects first p element
+			$("[hred]") //selects every element with href attribute $ ('selector').'action'
+	</script>
+	
+</head>
+<body id="wrapper">
+	<h1>Oreo</h1>
+	<h2 id="heading">A website dedicated to a most special, and Bunny!</h2>
+	<nav>
+		<a href="oreovideos.html">Videos</a>
+		<a href="oreogallery.html">Gallery</a>
+		<a target="_blank" href="https://instagram.com/big_baby_buns_?igshid=jcyxm24uupv0">Instagram</a>
+	</nav>
+	<main>
+		<img src="oreo.jpeg" id="oreoPainting" alt="Oreo Painting">
+		<p id="para" onclick="this.innerHTML='Oreo is a 9 year-old Lionhead Rabbit from Cornwall, England. Looked after by her wonderful mummy-bunny: Wumpus!'">Oreo is a 9 year-old Lionhead Rabbit from Cornwall, England.</p> 
+		<button>Click Me to see a magic trick</button>
+	</main>
+	 <footer>
+	Copyright &copy; 2020 Josef Jezorske
+	</footer>
+	<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
